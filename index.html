@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+    <head>
+        <title>Welcome to Sigma Coffee</title>       
+        <meta charset="utf-8">
+        <meta name="keywords" content="Birsbane coffee, Sigma Coffee">
+        <meta name="description" content="Birsbane coffee, Brisbanecity coffee shop">
+        <meta name="author" content="Yifan Feng(45791916)">     
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+<body>
+ <!--<section class="fullwidth-outer-WP">
+   <div id="top-alert" class="box-width">Free Australia Shipping over $99.</div>
+</section>-->
+
+<section class="fullwidth-outer-WP" id="top-menu-WP">
+    <div id="menu" class="box-width">
+        <ul> 
+            <li class="menu-logo"><a href ='index.html'><img src="images/logo-web.png"></a></li>
+			<li id="burder-menu" class="mobile-only" onclick="BurgerMenuToggle()"><img src="images/burge-menu.svg"></li>
+
+			<div id="top-menu-link" class="menu-link-WP">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="image-reference.pdf" target="_blank">Image References</a></li>
+			<li id="search-WP"><input id="search" type="text" placeholder="Search..."></li>
+		
+
+		<div class="menu-user-WP">			
+                <li id="icon-shopping"><img src="images/user.png"></li>
+                <li id="icon-shopping"><img src="images/icon-shopping.png"></li>
+                <li id="icon-shopping"><img src="images/heart.png"></li>
+			</div>
+			</div>
+        </ul>
+    </div>
+</section> 
+
+
+<section class="fullwidth-outer-WP" id="home-slider">
+    <div class="slideshow-container box-width">
+
+        <div class="HomeSlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/Indexpage/coffee-slider-1.jpg">
+          <!--<div class="text">Coffee One</div>-->
+        </div>
+        
+        <div class="HomeSlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/Indexpage/coffee-slider-2.jpg">
+          <!--<div class="text">Coffee Two</div>-->
+        </div>
+        
+        <div class="HomeSlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/Indexpage/coffee-slider-5.jpeg">
+          <!--<div class="text">Coffee Three</div>-->
+        </div>
+
+        <div class="HomeSlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/Indexpage/coffee-slider-4.jpeg">
+            <!--<div class="text">Coffee Four</div>-->
+            </div>       
+        </div>
+
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+</section><!--./fullwidth-outer-WP-->
+
+
+
+<!--Reservation system-->
+<section class="fullwidth-outer-WP" id="reservation">
+<div class="box-width">
+    <h3>Make a reservation</h3>
+    <div class="res-form-WP">
+        <form action="reservation-result.html">
+            <input type="date" id="start" name="res-date" required>
+
+            <select name="hours" required>
+                <option value ="hour-select">Select Hour</option>
+                <option value ="10">8:00</option>
+                <option value ="10">8:30</option>
+                <option value ="10">9:00</option>
+                <option value ="10">9:30</option>
+                <option value ="10">10:00</option>
+                <option value ="10">10:30</option>
+                <option value ="10">11:00</option>
+                <option value ="10">11:30</option>
+                <option value ="10">12:00</option>
+                <option value ="10">12:30</option>
+                <option value ="10">13:00</option>
+                <option value ="10">13:30</option>
+            </select>
+            <select name="Number of people" required>
+                <option value = "Number-select">Select Number of people</option>
+                <option value ="10">1</option>
+                <option value ="10">2</option>
+                <option value ="10">3</option>
+                <option value ="10">4</option>
+                <option value ="10">5</option>
+                <option value ="10">6</option>
+            </select>
+                                
+            <input type="text" id="dietary" placeholder="Dietary requirements">
+            <input type="submit" value="Find a table">
+        </form>
+    </div><!--/.res-form-WP-->
+    </div><!--/.box-width-->
+</section><!--/#reservation-->
+
+
+<section class="fullwidth-outer-WP" id="home-hero-a">
+    <div class="box-width two-col-WP">
+        <div class="text-left-col">
+            <h2 class="sigmacoffee-centre" > GET A CUP OF SIGMA <br>COFFEE NEAR YOU <br>
+            <u><a href="visit.html">FIND A SIGMA COFFEE</u></a></h2>
+        </div>
+        <div class="img-right-col"><img src="images/home-find.jpeg"  alt="Link to Visit page"></div>
+    </div>
+</section><!--./fullwidth-outer-WP-->
+
+<section class="fullwidth-outer-WP" id="home-hero-2">
+    <div class="box-width two-col-WP">
+        <div class="img-left-col">
+            <img src="images/home-menu.jpg"  alt="Link to Visit page">
+        </div>
+        <div class="text-right-col">
+            <h2>INTRODUCING</h2>
+                <h3><a href="SigmaCoffeeMenu.pdf" target="_blank">Our Seasonal Menu</a></h3>
+                <p>Every three months our Chefs create a menu centered around seasonal, 
+                    local produce, brought to life with innovative cooking techniques 
+                    to create enjoyable dishes layered with highlights of native 
+                    Australian ingredients and hints of Sigma Coffee. 
+                    Scroll down to seen our current Menu, 
+                    including Signature Brunch dishes and beverage options.....
+                </p>
+                <div id="menu-pdf">
+                    <div class ="menu-pdf-centre">
+                        <button class="sigma-menu-pdf"><a href="SigmaCoffeeMenu.pdf" target="_blank">Menu</a></button>
+                        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                        <!--back to top-->
+                    </div>  
+                </div>
+        </div>
+    </div>
+</section><!--./fullwidth-outer-WP-->
+
+
+<!--Sigma Coffee 4 product card-->
+<section class="fullwidth-outer-WP" id="feature-product">
+
+    <h2 class="text-center">Top sellers</h2>
+
+    <div class="box-width product-grid-WP">
+
+        <div class="feature-product-item">
+            <div class="feature-product-item-inner">
+                <div class="product-image"><img src="images/Shop/roma.jpg"></div>
+                    <div class="product-intro"><h6>From $15.50</h6><h5>Roma</h5>
+                        <p class="product-info">Caramelly & Rich Blend. Flavours like Red Fruit.</p>
+                    <div class="product-action"><button>Learn More</button></div>
+                </div><!--product-image-->
+            </div><!--product-intro-->       
+        </div><!--/.feature-product-item-->
+
+        <div class="feature-product-item">
+            <div class="feature-product-item-inner">
+                <div class="product-image"><img src="images/Shop/organic.jpg"></div>
+                    <div class="product-intro"><h6>From $16.99</h6><h5>Organic</h5>
+                        <p class="product-info">Caramelly & Rich Blend. Flavours like Red Fruit.</p>
+                    <div class="product-action"><button>Learn More</button></div>
+                </div><!--product-image-->
+            </div><!--product-intro-->          
+        </div><!--/.feature-product-item-->
+
+        <div class="feature-product-item">
+            <div class="feature-product-item-inner">
+                <div class="product-image"><img src="images/Shop/darkcity.jpg"></div>
+                    <div class="product-intro"><h6>From $16.99</h6><h5>Dark City</h5>
+                        <p class="product-info">Balanced & Hearty.Flavours like Forest Fruits.</p>
+                    <div class="product-action"><button>Learn More</button></div>
+                </div><!--product-image-->
+            </div><!--product-intro-->      
+        </div><!--/.feature-product-item-->
+        
+        <div class="feature-product-item">
+            <div class="feature-product-item-inner">
+                <div class="product-image"><img src="images/Shop/blade-runner.jpg"></div>
+                    <div class="product-intro"><h6>From $16.50</h6><h5>Blade Runner</h5>
+                        <p class="product-info">Juicy & Vibrant. Flavours like Tropical Fruits.</p>
+                    <div class="product-action"><button>Learn More</button></div>
+                </div><!--product-image-->
+            </div><!--product-intro-->       
+        </div><!--/.feature-product-item-->        
+    </div><!--./product-tile-WP-->
+</section><!--./fullwidth-outer-WP-->
+
+
+<!--Sigma Coffee Information (Opening Hours + Find Us + Contact Us )-->
+<section class="fullwidth-outer-WP" id="contact-map">
+    <div class="box-width two-col-WP">
+
+    <div class="eq-left-col">
+     <div class="Detail"> OPENING HOURS </div>
+        <p>Everyday 7am - 3pm (Kitchen until 2:30pm) </p>
+     <div class="Detail"> FIND US</div>
+        <p>119 George St, Brisbane City QLD, 4000</p>
+     <div class="Detail">CONTACT US</div>
+        <a href="mailto:venues@Sigmacoffee.com?subject=Sigma Coff Web enquiry">Venues@Sigmacoffee.com</a>
+            <br>(07) 3152 1182</p>
+    </div><!--Detail-->
+
+    <div class="eq-right-col">
+        <div class="google-map-wp">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.8896306283027!2d153.02339125148615!3d-27.47269522332555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a053b2211b1%3A0x2d94d88e8deeccff!2s119%20George%20St%2C%20Brisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1651987683361!5m2!1sen!2sau" 
+        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div><!--google-map-wp-->
+    </div><!--eq-right-col-->
+
+    </div><!--/.two-col-WP-->
+</section><!--./fullwidth-outer-WP-->
+
+
+<!--Footer Section-->
+<section class="fullwidth-outer-WP" id="footer">
+<div class="box-width"> 
+    <div class="footer-inner-WP">
+    
+        <!--Social Media -->
+    <div class="footer-col footer-link">
+        <a href="#"><h6>Social Media</h6></a>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Wechat</a></li>
+        </ul>
+
+    </div><!--/.footer-col-->
+     
+    <!--About -->
+    <div class="footer-col footer-link">
+        <a href="about.html"><h6>About</h6></a>
+        <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Our Team</a></li>
+            <li><a href="about.html">Mission</a></li>
+        </ul>
+
+    </div><!--/.footer-col-->
+
+     <!--Shop -->
+    <div class="footer-col footer-link">
+        <a href="shop.html"><h6>Shop</h6></a>
+        <ul>
+            <li><a href="shop.html">Coffee</a></li>
+            <li><a href="shop.html">Equipment</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="visit.html">Visit</a></li>
+        </ul>
+    </div><!--/.footer-col-->
+
+     <!--Menu--> 
+    <div class="footer-col footer-link">
+        <a href="menu.html"><h6>Menu</h6></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </div><!--/.footer-col-->
+    </div><!--/.footer-inner-WP-->
+</div><!--/.box-widthP-->
+</section><!--/#footer-->
+
+    <div class="terms-condition">   
+        <div id="footer-terms-condition">
+            <p>Sigma Coffee @ 2022</p>
+            <p>Terms & Condition</p>
+        </div><!--footer-terms-condition-->
+    </div><!--terms-condition-->
+
+        <!--slideshow JS-->
+        <script src="script/bakc-to-top-button.js"></script> 
+        <!--back to top button JS-->
+        <script src="script/banner-slider.js"></script>
+		<!--mobile menu JS-->
+		<script src="script/mobile-menu.js"></script>
+
+    </body>
+</html>

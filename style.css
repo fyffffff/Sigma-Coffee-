@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+* {box-sizing:border-box}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:hover,a:visited,a:link{
+  text-decoration: none;
+  color:#030303
+}
+
+body{font-family: 'Lato', sans-serif;line-height: 1.2;}
+h1,h2,h3,h4,h5,h6, p{font-weight: 700;margin:0;padding:0;}
+h1{font-size: 40px;}
+h2{font-size: 36px; text-align: center;}
+h3{font-size: 32px; text-align: center;}
+h4{font-size: 28px;}
+h5{font-size: 24px;line-height: 26px;}
+h6{font-size: 18px;}
+p{font-size: 14px; line-height: 20px; font-weight: normal; margin-top: 10px;}
+
+.fullwidth-outer-WP{
+  width:100%;
+  display:block;
+}
+.box-width{
+  display:block;
+  width:100%;
+  max-width:1140px;
+  margin:0 auto
+}
+
+/*Free Australia Shipping over $99*/
+#top-alert{
+  text-align: center;
+  border-radius: 15px;
+  background-color: #d9b674; 
+  padding: 12px 10px;
+  font-weight: 700;
+}
+#menu > ul{
+  display:flex;    
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap
+}
+#menu .menu-logo img{
+  max-width: 170px;
+}
+#menu  #search{
+  padding:6px 20px;
+  border-radius: 50px; 
+  border: 1px solid #373737;
+}
+#menu > ul > li.menu-logo a:hover{
+  background-color: initial;
+}
+#menu #icon-shopping img{
+  max-width:30px
+}
+
+#menu .menu-link-WP{display:flex;flex-wrap: wrap;align-items:center;}
+
+
+#reservation .res-form-WP form{
+  display: flex; 
+  justify-content:space-between; 
+  width: 100%;
+  gap: 12px;
+}
+#reservation .res-form-WP input,#reservation .res-form-WP select{
+  flex:1;padding: 5px 10px;
+  border-radius: 5px;    
+  border: 2px solid #ccc;
+}
+#reservation .res-form-WP input[type="submit"]{
+  background-color:#373737;
+  border-color:#373737;
+  color:#fff;
+}
+#reservation {
+  margin-bottom: 66px;
+}
+#reservation h3{
+  margin-bottom: 30px;
+}
+
+
+#home-slider{margin-bottom:20px;}
+.HomeSlides img{width:100%;}
+
+/*Top Seller*/
+.text-center{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 36px;
+}
+/* Slideshow container */
+.mySlides {
+  display: none;
+}
+.slideshow-container img {
+  vertical-align: middle;
+}
+.slideshow-container {
+  max-width: 1140px;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* feature image col */
+.two-col-WP{
+  display: flex;
+}
+.two-col-WP .text-left-col{
+  flex:1;
+  flex-direction:column;
+  padding:20px 40px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.two-col-WP .img-right-col{
+  flex:1;
+}
+.two-col-WP .img-right-col img{
+  width:93%
+}
+.two-col-WP .text-right-col{
+  flex:1;
+  flex-direction:column;
+  padding:20px 0px 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.two-col-WP .text-right-col h2{
+  color: #bb831a;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.two-col-WP .text-right-col h3{
+  margin-bottom: 15px;
+}
+
+.two-col-WP .text-right-col p{
+  font-size: large;
+  line-height: 25px;
+}
+
+.two-col-WP .img-left-col{
+  flex:1;
+}
+.two-col-WP .img-left-col img{
+  width:100%
+}
+section[id^="home-hero"]{
+  margin-bottom: 60px;
+}
+/* feature product list */
+#feature-product{
+  margin-bottom: 16px
+}
+#feature-product .product-grid-WP{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#feature-product .feature-product-item{
+  flex:0 1 25%;
+  padding:20px 20px;
+}
+#feature-product .feature-product-item-inner{
+  box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2);    
+  border-radius: 10px;
+}
+#feature-product .product-image{
+  padding:10px 10px 10px 10px
+}
+#feature-product .product-image img{
+  width:100%
+}
+#feature-product .product-intro{
+  padding:0 15px 15px 15px;
+}
+#feature-product .product-intro h6{
+  margin-bottom:10px;
+  color: #bb831a;
+}
+#feature-product .product-intro h5{
+  margin-bottom:10px;
+}
+#feature-product .product-action{
+  margin-bottom:15px;
+}
+#feature-product .product-action button{
+  border-radius: 35px;    
+  padding: 14px 26px; 
+  border: 0;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+}
+#feature-product .product-action button:hover{    
+  box-shadow: 0 6px 12px -8px rgb(0 0 0 / 16%), 0 6px 12px rgb(0 0 0 / 23%);
+}
+section .two-col-WP .eq-left-col{
+  flex:1
+}
+section .two-col-WP .eq-left-col{
+  flex:1
+}
+/* Sigma Coffee Information (Opening Hours + Find Us + Contact Us ) */
+#contact-map .eq-left-col {
+  text-align: center;
+  margin-top: 80px;
+}
+.eq-left-col .Detail {
+  color: #dac297 ; /* color for (Opening / Find US / Contact Us )*/
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#contact-map{
+  margin-bottom:70px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+li a {
+  display: block;
+  color: #030303;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: rgb(189, 186, 186);
+}
+/*Terms & Condition*/
+#terms-coniditon{
+  display: flex;
+  padding:25px 0 25px;
+  border-top:1px solid #ccc;
+  display:flex;
+}
+/* Menu Page */
+.menu-heading{
+  display: flex;
+  margin: 0;
+}
+.heading-info{
+  margin: 0;
+  padding: 0;
+}
+#menu-heading h2{
+  color: #bb831a;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+/* Menu Page - 9 images */
+table#menu9{
+  display: flex;
+  max-width: 991px;
+  height: auto;
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 72px;
+}
+table td img{ 
+  padding:5px;
+  width: 150px;
+  margin: auto;
+  width: 100%;
+}
+/* Menu Page - dine with us */
+.dine-with-us{
+  display: flex;
+  padding: 20px 61px 20px 60px;
+  justify-content: center;
+}
+.dine-with-us .dine-description{
+  display: block;
+  padding: 0;
+}
+.dine-with-us h2{
+  margin-bottom: 20px;
+  color: #bb831a;
+}
+.dine-with-us p{
+  border: #030303;
+  text-align: center;
+  font-size: 17px;
+  line-height: 26px;
+  padding: 20px 22px 0px 15px;
+  margin-bottom: 20px;
+}
+.dine-with-us img{
+  width: 55%;
+  border-radius: 4px;
+  justify-content: center;
+}
+/* Menu Page - Link to Menu pdf button */
+.sigma-menu-pdf {
+  display: inline-block;
+    padding: 15px 32px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(211 207 196);
+    background-color: #c89d50;
+    border: none;
+    border-radius: 13px;  
+}
+#menu-pdf {
+  text-align: center;
+  margin-bottom: 65px;
+}
+/* Visit page bottom-button */
+.bottom-button{
+border: none;
+color: black;
+background-color: #e4ba6c; 
+padding: 20px;
+text-align: center;
+font-size: 20px;
+margin: 34px 25px;
+max-width:300px;
+border-radius: 8px;
+font-weight: bold;
+}
+/* visit page - heading */
+#visit-heading h3{
+  margin-top: 30px;
+  margin-bottom:25px;
+}
+.dine-description p{
+  text-align: center;
+}
+/* About-us page - description */
+.about-text-left-col{
+  flex: 1;
+  flex-direction: column;
+  padding: 27px 103px 55px 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-text-left-col .about-sigma-centre {
+  font-size: 19px;
+  margin-top: 35px;
+  line-height: 26px;
+}
+.about-text-right-col{
+  flex: 1;
+  flex-direction: column;
+  padding: 27px 103px 55px 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-right-col .about-descrption p{
+  font-size: 19px;
+}
+
+
+/* Menu page Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+ 
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #e4ba6c;
+  border-radius:30px;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+#Filter-WP form input{padding: 5px 10px !important;}
+
+}
+
+/* Back to top button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #030303; 
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; /* Increase font size */
+  opacity: 0.5;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+/* shop - select button */
+#myselect{
+  text-align: center;
+  margin: 20px;
+  width: 135px;
+  height: 53px;
+  margin-left: 180px;
+  margin-right: 100px;
+  border: 1px solid #0c0b0b;
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+#Filter-WP select{
+  margin:0;
+}
+#Filter-WP{
+  text-align:center;
+}
+.content-centre{
+  display:block;
+  width:100%;
+  text-align:center;
+}
+#contact-map .google-map-wp iframe{
+  max-width:100%;
+}
+.box-width .eq-left-col{
+  margin-bottom:15px
+}
+.box-width .eq-right-col{
+  margin-bottom:15px
+}
+#contact-form label{
+  margin-bottom:5px;
+  display: block;
+}
+#contact-form input{
+  margin-bottom:5px;
+  display: block;
+}
+#contact-form select{
+  margin-bottom:5px;
+  display: block;
+}
+#contact-form textarea{
+  margin-bottom:15px;
+}
+#footer .footer-link a{
+  padding:5px 5px
+}
+
+
+/* Mobile and tab media query */
+.mobile-only{
+  display:none;
+}
+#menu .mobile-menu-toggle{
+  display:flex !important
+}
+#burder-menu a:hover:not(.active){
+  background-color:rgb(255, 255, 255);
+}
+#burder-menu img{
+  width:35px;
+  margin-right:15px;
+  margin-left:5px
+}
+#search-WP{
+  display:flex;
+  align-items:center;    
+  padding: 0 15px;
+}
+#search-WP input{
+  margin:0;
+}
+.menu-user-WP{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-user-WP > li{
+  padding:0 5px;
+}
+
+@media screen and (max-width:480px){
+  #contact-map .box-width{
+    flex-direction:column;}
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+	#feature-product .feature-product-item{
+    flex: 0 1 50% !important;
+  }
+}
+
+@media screen and (max-width:769px){
+	#menu .menu-link-WP{
+    display: none;
+    flex-direction:column;
+    width:100%;
+    background: #f1e8d7;
+    margin-bottom:10px;
+  }
+	#menu .menu-link-WP > li{
+    border-bottom: 1px #0f0f0f solid;
+  }
+	.mobile-only{
+    display:initial;
+  }
+	#search-WP{
+    width:100%;
+    margin: 15px 0;
+    border-bottom:0px !important;
+    display: flex;
+    justify-content: center;
+  }
+	#search-WP input{
+    max-width:375px;
+    padding: 15px 25px !important;
+  }
+	.menu-user-WP{
+    padding:0 15px 15px 15px;
+  }
+#reservation{
+  padding:0 15px;
+  margin-bottom:20px
+}
+#reservation .res-form-WP form{
+  flex-direction: column;
+}
+#reservation .res-form-WP form input{
+  width:100%;
+}
+.fullwidth-outer-WP .two-col-WP {
+  flex-direction:column;
+}
+.fullwidth-outer-WP .two-col-WP img{
+  width:100%;
+}
+#home-hero-2 .two-col-WP .img-left-col{
+  order:2
+}
+.fullwidth-outer-WP .two-col-WP div[class^=text]{
+  padding:15px 15px 20px 15px;
+}
+#feature-product .feature-product-item{
+  flex: 0 1 100%;
+}
+#contact-map .eq-left-col{
+  margin-top:0px
+}
+#contact-map{
+  margin-bottom:20px
+}
+table#menu9{
+  padding:15px;
+}
+#feature-product .product-grid-WP{
+  flex-direction:column;
+  flex-wrap: initial;
+}
+.text-center{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#Filter-WP{
+  padding:0 20px;
+}
+}
+#Filter-WP form{
+  display:flex;
+  flex-direction:row;
+}
+#Filter-WP form input{
+  border: 1px solid #000;
+  border-right: 0;
+	padding: 5px 25px;
+	}
+#Filter-WP form input:focus{
+  border:2px solid #000;
+}
+#Filter-WP form select{
+  padding-left:10px;
+  height:auto;
+  margin: 0; 
+  margin-left: -50px;
+  width:auto;
+}
+/*Footer - Section*/
+#footer {
+  margin-top: 22px;
+  margin-bottom:45px;
+}
+#footer .footer-inner-WP{
+  padding:25px 0 25px;
+  border-top:1px solid #ccc;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  text-align: center
+}
+#footer .footer-col{
+  flex:0 1 25%
+}
+.footer-link h6{
+  margin-bottom:15px
+}
+.footer-link ul{ 
+  list-style-type: none;
+}
+.footer-link ul li a{
+  padding:0
+}
+.footer-link ul li{
+  padding:0 0 10px 0
+}
+
+#bottom-learn-more{
+  display: flex;
+}
+
+#footer-terms-condition{
+  padding: 0px 0 15px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+#footer-terms-condition p{
+  padding: 0;
+  margin: auto;
+}
