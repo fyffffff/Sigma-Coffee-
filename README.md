@@ -1,6 +1,8 @@
 # Sigma-Coffee
 **Project Duration:** Feb 2022 - June 2022
+
 **Institution:** University of Queensland (UQ)
+
 **Course:** DECO7140 Introduction to Web Design
 
 ## Overview
